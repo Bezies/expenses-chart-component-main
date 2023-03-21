@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <!-- CSS  -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- GOOGLE FONTS  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap" rel="stylesheet">
+
+  <!-- JS  -->
+  <script src="app.js" defer></script>
+
+  <!-- JSON  -->
+  <script type="module" src="./app.js"></script>
+  
+
+
+  <title>Frontend Mentor | Expenses chart component</title>
+
+
+</head>
+
+<body>
+
+  <main>
+    <h1 class="sr-only">Frontend Mentor Challenge junior JS | Expenses chart component</h1>
+
+    <div class="myBalance">
+      <div class="figures">
+        <p class="balance">My balance</p>
+        <p class="sold">$921.48</p>
+      </div>
+      <img src="images/logo.svg" alt="logo">
+    </div>
+
+    <div class="spending">
+
+      <h2>Spending - Last 7 days</h2>
+
+      <div class="graph">
+        <div class="box" id="day1"><span class="deposit"></span><button class="day" id="mon"></button><p>mon</p></div>
+        <div class="box" id="day2"><span class="deposit"></span><button class="day" id="tue"></button><p>tue</p></div>
+        <div class="box" id="day3"><span class="deposit"></span><button class="day" id="wed"></button><p>wed</p></div>
+        <div class="box" id="day4"><span class="deposit"></span><button class="day" id="thu"></button><p>thu</p></div>
+        <div class="box" id="day5"><span class="deposit"></span><button class="day" id="fri"></button><p>fri</p></div>
+        <div class="box" id="day6"><span class="deposit"></span><button class="day" id="sat"></button><p>sat</p></div>
+        <div class="box" id="day7"><span class="deposit"></span><button class="day" id="sun"></button><p>sun</p></div>
+      </div>
+
+      <div class="total">
+        <div class="thisM">
+          <p>Total this month</p>
+          <span>$478.33</span>
+        </div>
+
+        <div class="lastM">
+          <span>+2.4%</span>
+          <p>from last month</p>
+        </div>
+      </div>
+
+
+    </div>
+
+  </main>
+
+  <footer>
+
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+      Coded by <a href="https://github.com/Bezies" target="_blank">Quentin Bessiere</a>.
+    </div>
+
+  </footer>
+</body>
+
+</html>

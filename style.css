@@ -1,0 +1,237 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: hsl(27, 66%, 92%);
+    font-family: 'DM Sans', sans-serif;
+}
+
+.sr-only {
+    position: absolute ;
+    left: -10000px;
+    width: 1px;
+    height: 1px;
+    top: auto;
+    overflow: hidden;
+  }
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+.myBalance {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 40px;
+    background-color: hsl(10, 79%, 65%);
+    width: 350px;
+    border-radius: 20px;
+    color: white;
+}
+
+.myBalance img {
+    width: 50px;
+}
+
+.balance {
+    font-size: 12px;
+}
+
+.sold {
+    font-size: 20px;
+    margin: 10px 0;
+    font-weight: 700;
+}
+
+.spending {
+    background-color: hsl(33, 100%, 98%);
+    margin: 20px 0;
+    padding: 15px 40px;
+    width: 350px;
+    border-radius: 20px;
+}
+
+.spending h2 {
+    color: hsl(25, 47%, 15%);
+    font-weight: 700;
+}
+
+.total {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+    padding: 20px 0 ;
+    border-top: 1px solid hsl(27, 66%, 92%);
+}
+
+.total p {
+    font-size: 12px;
+    color: hsl(28, 10%, 53%);
+    margin: 0;
+}
+
+.thisM span {
+    font-size: 30px;
+    font-weight: 700;
+    color: hsl(25, 47%, 15%);
+}
+
+.lastM {
+    margin-top: 10px;
+    text-align: right;
+}
+
+.lastM span {
+    color: hsl(25, 47%, 15%);
+    font-size: 12px;
+
+}
+
+
+
+/* DIAGRAM  */
+
+.graph {
+    display: flex;
+    align-items: end;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+
+.graph p {
+    margin: 10px 0;
+    font-size: 10px;
+    font-weight: 400;
+    color: hsl(28, 10%, 53%);
+}
+
+.deposit {
+    display: none;
+}
+
+.deposit-on {
+    width: 40px;
+    padding: 5px 0;
+    font-size: 10px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+    color: white;
+    background-color: black;
+    text-align: center;
+    display: block;
+}
+
+#mon {
+    width: 35px;
+    height: 35px;
+    background-color: hsl(10, 79%, 65%);
+    border: none;
+    border-radius: 5px;   
+    cursor: pointer; 
+}
+
+#tue {
+    width: 35px;
+    height: 70px;
+    background-color: hsl(10, 79%, 65%);
+    border: none;
+    border-radius: 5px;   
+    cursor: pointer; 
+}
+
+#wed {
+    width: 35px;
+    height: 110px;
+    background-color: hsl(186, 34%, 60%);
+    border: none;
+    border-radius: 5px;   
+    cursor: pointer;
+}
+
+#thu {
+    width: 35px;
+    height: 60px;
+    background-color: hsl(10, 79%, 65%);
+    border: none;
+    border-radius: 5px;   
+    cursor: pointer;
+}
+
+#fri {
+    width: 35px;
+    height: 50px;
+    background-color: hsl(10, 79%, 65%);
+    border: none;
+    border-radius: 5px;   
+    cursor: pointer;
+}
+
+#sat {
+    width: 35px;
+    height: 80px;
+    background-color: hsl(10, 79%, 65%);
+    border: none;
+    border-radius: 5px;   
+    cursor: pointer;
+}
+
+#sun {
+    width: 35px;
+    height: 55px;
+    background-color: hsl(10, 79%, 65%);
+    border: none;
+    border-radius: 5px;   
+    cursor: pointer;
+}
+
+#day1, #day2, #day3, #day4, #day5, #day6, #day7 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+
+
+/* FOOTER  */
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+  }
+
+  .attribution a {
+    color: hsl(228, 45%, 44%);
+  }
+
+
+
+  /* MEDIA QUERIES  */
+
+@media screen and (max-width: 400px) {
+    
+   .myBalance {
+    width: 250px;
+   }
+
+   .spending {
+    width: 250px;
+   }
+
+   .spending h2 {
+    font-size: 20px;
+   }
+
+   #mon, #tue, #wed, #thu, #fri, #sat, #sun {
+    width: 25px;
+   }
+
+}
